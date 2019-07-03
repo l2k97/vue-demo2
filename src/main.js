@@ -11,13 +11,7 @@ vue.use(vuerouter)
 vue.component(Button.name,Button)
 vue.component(Cell.name,Cell)
 
-var router=new vuerouter({
-    routes:[
-
-    ],
-    linkActiveClass: 'mui-active'
-
-})
+import router from "./router"
 
 var vm=new vue({
     el:"#app",

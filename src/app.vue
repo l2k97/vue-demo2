@@ -2,6 +2,8 @@
     <div id="appContent">
         <mt-header fixed title="我的商城网站"></mt-header>
 
+        <router-view></router-view>
+
         <nav class="mui-bar mui-bar-tab">
             <router-link to="/home" class="mui-tab-item " >
                 <span class="mui-icon mui-icon-home"></span>
@@ -22,9 +24,9 @@
                 <span class="mui-tab-label">搜索</span>
             </router-link>
         </nav>
-        <div class="mui-content">
-        <router-view></router-view>
-    </div>
+
+
+
     </div>
 
 </template>
@@ -51,7 +53,10 @@
 </script>
 
 <style scoped>
+#appContent{
+    padding-top: 42px;
 
+}
 
 
 </style>
